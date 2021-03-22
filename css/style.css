@@ -1,0 +1,109 @@
+:root {
+    --cyan: #4ABEBD;
+    --dark-cyan: #2BB3B1;
+    --yellow: #BFDF32;
+    --bg-color: #E2EDF3;
+    --text-color: #e9ffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    color: var(--text-color);
+    padding: 64px 32px;
+}
+
+.main {
+    display: grid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    /* outline: 1px solid red;
+    border: 1px solid red; */
+    padding: 20px 26px;
+}
+
+.box:first-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+.box:last-of-type {
+    border-radius: 0 0 10px 10px;
+}
+
+.box--white {
+    background-color: white;
+}
+
+.box__title {
+    color: var(--cyan);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.box__title--white {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.box__subtitle {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.box__text--grey {
+    color: #ACB0B9;
+    line-height: 30px;
+    font-size: .9rem;
+}
+
+.box--cyan {
+    background-color: var(--cyan);
+}
+
+.box--dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.box__title {
+    margin: 0;
+}
+
+.box__currency--big {
+    font-size: 1.7rem;
+}
+
+.box__currency::before {
+    content: '$';
+}
+
+.box__period {
+    color: #76d4d4;
+}
+
+.box_button {
+    display: block;
+    background-color: var(--yellow);
+    text-decoration: none;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 6px;
+    padding: 16px 0;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.list {
+    color: var(--bg-color);
+    font-size: 14px;
+    list-style: none;
+    margin-bottom: 2px;
+    padding-left: 0;
+    line-height: 20px;
+}
